@@ -1,0 +1,11 @@
+﻿@page "/"
+@attribute [Authorize]
+
+<h1>Todo App</h1>
+
+<AuthorizeView>
+    <h3>Hello, @context.User.Identity?.Name!</h3>
+</AuthorizeView>
+
+
+
